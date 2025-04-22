@@ -6,6 +6,7 @@ html {
 :root {
   /* Colors */
   --general-text: #303030;
+  --accent-text: #7878ab;
 
   /* Hover */
   --opacity: 0.6;
@@ -15,13 +16,41 @@ html {
 }
 
 .body {
-  font-family: "Source Sans Pro", "Arial", sans-serif;
+  font-family: "SourceSans3", "Arial", sans-serif;
   font-weight: normal;
   font-size: 18px;
   line-height: 1.3;
 
   background-color: #f5f9ff;
   color: var(--general-text);
+}
+
+.title {
+  font-family: "Taylor Sans";
+  font-size: 55px;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.55px;
+  color: var(--general-text);
+}
+
+.title span {
+  color: var(--accent-text);
+}
+
+.button {
+  border-radius: 67px;
+  background: #f5f5fa;
+  box-shadow: -5.124px -5.124px 10.248px 0px rgba(255, 255, 255, 0.5),
+    5.124px 5.124px 10.248px 0px rgba(170, 170, 204, 0.25),
+    10.248px 10.248px 20.495px 0px rgba(170, 170, 204, 0.5),
+    -10.248px -10.248px 20.495px 0px #fff;
+  transition: var(--transition);
+}
+
+.button:hover {
+  transform: scale(1.1);
 }
 
 .wrapper {

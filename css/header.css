@@ -9,11 +9,13 @@
   line-height: 1.2;
 }
 
-.header__socials-link {
+.header__socials {
   display: flex;
   align-items: center;
   gap: 10px;
+}
 
+.header__socials-link {
   transition: var(--transition);
 }
 
