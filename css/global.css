@@ -7,6 +7,7 @@ html {
   /* Colors */
   --general-text: #303030;
   --accent-text: #7878ab;
+  --accent-text: #7878ab;
 
   /* Hover */
   --opacity: 0.6;
@@ -16,6 +17,7 @@ html {
 }
 
 .body {
+  font-family: "SourceSans3", "Arial", sans-serif;
   font-family: "SourceSans3", "Arial", sans-serif;
   font-weight: normal;
   font-size: 18px;
