@@ -53,6 +53,7 @@
 }
 
 .hero__switch-item {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 19px;
@@ -60,6 +61,16 @@
   font-family: Montserrat;
   font-weight: 600;
   line-height: 1.2;
+}
+
+.hero__switch-body {
+  display: block;
+}
+
+.hero__switch-circle {
+  position: absolute;
+  top: 0%;
+  left: 20%;
 }
 
 .hero__subtitle {
