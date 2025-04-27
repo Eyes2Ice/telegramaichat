@@ -10,16 +10,17 @@
 }
 
 .header__socials {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+  z-index: 11;
 }
 
 .header__socials-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   transition: var(--transition);
 }
 
-.header__socials-link:hover {
+.header__socials-link:hover span {
   opacity: var(--opacity);
 }
 
@@ -42,6 +43,7 @@
   display: flex;
   flex-direction: column;
   gap: 1px;
+  z-index: 11;
 }
 
 .header__contacts-text {
@@ -57,4 +59,58 @@
 
 .header__contacts-link:hover {
   opacity: var(--opacity);
+}
+
+/* ===============Burger=================== */
+
+.burger-icon {
+  display: none;
+  z-index: 11;
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.burger-icon span {
+  position: relative;
+}
+
+.burger-icon span,
+.burger-icon span::after,
+.burger-icon span::before {
+  display: block;
+  width: 30px;
+  height: 3px;
+  border-radius: 100px;
+  background: var(--general-text);
+  transition: var(--transition);
+}
+
+.burger-icon span::after,
+.burger-icon span::before {
+  content: "";
+  position: absolute;
+}
+
+.burger-icon span::before {
+  top: 8px;
+}
+
+.burger-icon span::after {
+  bottom: 8px;
+}
+
+.body--opened-menu .burger-icon span {
+  background: transparent;
+}
+
+.body--opened-menu .burger-icon span::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.body--opened-menu .burger-icon span::after {
+  bottom: 0;
+  transform: rotate(-45deg);
 }
