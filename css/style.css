@@ -27,7 +27,8 @@
   margin-bottom: 40px;
   text-align: center;
 }
-workflow .hero__switch {
+
+.hero__switch {
   display: flex;
   gap: 30px;
   margin-bottom: 50px;
@@ -79,7 +80,7 @@ workflow .hero__switch {
   height: 12px;
 }
 
-/* =============advantages section================= */
+/* =============Advantages ================= */
 
 .advantages {
   background: linear-gradient(
@@ -218,7 +219,7 @@ workflow .hero__switch {
   text-transform: uppercase;
 }
 
-/* =============Examples section================= */
+/* =============Examples================= */
 
 .examples {
   position: relative;
@@ -291,7 +292,7 @@ workflow .hero__switch {
   color: var(--accent-text);
 }
 
-/* =============Solutions section================= */
+/* =============Solutions================= */
 
 .solutions__inner {
   display: flex;
@@ -856,6 +857,54 @@ workflow .hero__switch {
   font-size: 25px;
 }
 
+/* =============Contact================= */
+
+.contact__inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__title {
+  margin-bottom: 37px;
+}
+
+.contact__subtitle {
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+  max-width: 753px;
+  margin-bottom: 76px;
+  font-size: 25px;
+}
+
+.contact__subtitle p:last-child {
+  max-width: 547px;
+}
+
+.contact__subtitle span {
+  font-weight: 600;
+}
+
+.contact__buttons {
+  display: flex;
+  gap: 45px;
+  max-width: 567px;
+  margin-bottom: 73px;
+}
+
+.contact__btn-left,
+.contact__btn-right {
+  padding: 25px 48px;
+}
+
+.contact__btn-right {
+  max-width: 224px;
+}
+
+.contact__img {
+  align-self: center;
+}
+
 /* =============Breakpoints================= */
 
 @media (max-width: 1400px) {
@@ -974,6 +1023,17 @@ workflow .hero__switch {
 
   .results__testimonials {
     align-self: center;
+  }
+
+  /* =============Contact================= */
+
+  .contact__inner {
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact__inner .contact__subtitle p {
+    max-width: none;
   }
 }
 
@@ -1268,6 +1328,12 @@ workflow .hero__switch {
   .results__content-list-item:not(:last-child) {
     margin-bottom: 20px;
   }
+
+  /* =============Contact================= */
+
+  .contact__title br {
+    display: none;
+  }
 }
 
 @media (max-width: 600px) {
@@ -1441,6 +1507,26 @@ workflow .hero__switch {
     font-size: 18px;
     text-align: center;
   }
+
+  /* =============Contact================= */
+
+  .contact__inner .contact__subtitle p {
+    font-size: 20px;
+  }
+
+  .contact__subtitle {
+    margin-bottom: 40px;
+  }
+
+  .contact__buttons {
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+
+  .contact__btn-left,
+  .contact__btn-right {
+    padding: 20px;
+  }
 }
 
 @media (max-width: 400px) {
@@ -1563,5 +1649,25 @@ workflow .hero__switch {
 
   .faq {
     padding-bottom: 70px;
+  }
+
+  /* =============Contact================= */
+
+  .contact__inner .contact__subtitle p {
+    font-size: 18px;
+  }
+
+  .contact__title {
+    margin-bottom: 30px;
+  }
+
+  .contact__subtitle {
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+
+  .contact__buttons {
+    flex-direction: column;
+    align-items: center;
   }
 }
