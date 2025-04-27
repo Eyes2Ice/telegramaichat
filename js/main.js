@@ -26,14 +26,28 @@
     initialSlide: 0,
 
     navigation: {
-      nextEl: ".features__next",
-      prevEl: ".features__prev",
+      nextEl: ".next-button",
+      prevEl: ".prev-button",
     },
 
     pagination: {
       el: ".features__pagination",
       clickable: true,
       dynamicBullets: true,
+    },
+  });
+
+  // ================Results slider=====================
+
+  new Swiper(".testimonials__slider", {
+    spaceBetween: 15,
+    speed: 1000,
+    slidesPerView: 1,
+    initialSlide: 0,
+
+    navigation: {
+      nextEl: ".next-button",
+      prevEl: ".prev-button",
     },
   });
 })();
