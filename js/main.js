@@ -26,8 +26,8 @@
     initialSlide: 0,
 
     navigation: {
-      nextEl: ".next-button",
-      prevEl: ".prev-button",
+      nextEl: ".features__next",
+      prevEl: ".features__prev",
     },
 
     pagination: {
@@ -46,8 +46,36 @@
     initialSlide: 0,
 
     navigation: {
-      nextEl: ".next-button",
-      prevEl: ".prev-button",
+      nextEl: ".testimonials__next",
+      prevEl: ".testimonials__prev",
     },
+
+    autoplay: {
+      delay: 1500,
+      disableOnInteraction: false,
+    },
+  });
+
+  // ================FAQ Accordion=====================
+
+  const accordionLists = document.querySelectorAll(".accordion__list");
+
+  accordionLists.forEach((el) => {
+    el.addEventListener("click", (e) => {
+      const accordionList = e.currentTarget;
+      const accordionControl = e.target.closest(".accordion__list-control");
+      if (!accordionControl) return;
+      e.preventDefault();
+      const accordionItem = accordionControl.parentElement;
+      const accordionContent = accordionControl.nextElementSibling;
+
+      accordionItem.classList.toggle("accordion__list-item--opened");
+
+      if (accordionItem.classList.contains("accordion__list-item--opened")) {
+        accordionContent.style.maxHeight = accordionContent.scrollHeight + "px";
+      } else {
+        accordionContent.style.maxHeight = null;
+      }
+    });
   });
 })();
