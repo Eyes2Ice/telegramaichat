@@ -862,6 +862,7 @@
 .contact__inner {
   display: flex;
   flex-direction: column;
+  padding-bottom: 73px;
 }
 
 .contact__title {
@@ -903,6 +904,53 @@
 
 .contact__img {
   align-self: center;
+}
+
+/* =============Blog================= */
+
+.blog__heading {
+  display: flex;
+  align-items: center;
+  gap: 54px;
+  margin-bottom: 76px;
+}
+
+.blog__list {
+  display: flex;
+  gap: 30px;
+}
+
+.blog__list-item {
+  max-width: 400px;
+}
+
+.blog__list-item-img {
+  min-height: 328px;
+  border-radius: var(--border-radius);
+  background-color: #f1f4f9;
+}
+
+.blog__list-item-content {
+  padding: 40px 45px 80px 40px;
+  transform: translateY(-125px);
+  background-color: var(--accent-bg);
+  border-radius: var(--border-radius);
+}
+
+.blog__list-item-title {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.blog__list-item-subtitle {
+  font-size: 22px;
+}
+
+.blog__btn {
+  align-self: center;
+  max-width: 300px;
+  padding: 25px 48px;
 }
 
 /* =============Breakpoints================= */
@@ -1652,6 +1700,10 @@
   }
 
   /* =============Contact================= */
+
+  .contact__inner {
+    padding-bottom: 70px;
+  }
 
   .contact__inner .contact__subtitle p {
     font-size: 18px;
