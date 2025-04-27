@@ -27,8 +27,7 @@
   margin-bottom: 40px;
   text-align: center;
 }
-
-.hero__switch {
+workflow .hero__switch {
   display: flex;
   gap: 30px;
   margin-bottom: 50px;
@@ -294,13 +293,10 @@
 
 /* =============Solutions section================= */
 
-.solutions {
-  margin-bottom: 130px;
-}
-
 .solutions__inner {
   display: flex;
   flex-direction: column;
+  padding-bottom: 130px;
 }
 
 .solutions__heading {
@@ -400,6 +396,9 @@
 .features {
   display: flex;
   align-items: center;
+}
+
+.features__inner {
   padding-bottom: 157px;
 }
 
@@ -636,7 +635,7 @@
 
 /* =============Assistents================= */
 
-.assistents {
+.assistents__inner {
   padding-bottom: 130px;
 }
 
@@ -723,7 +722,10 @@
 
 .results {
   position: relative;
-  margin-bottom: 136px;
+}
+
+.results__inner {
+  padding-bottom: 136px;
 }
 
 .results::after {
@@ -793,10 +795,10 @@
   width: 100%;
   border-radius: var(--border-radius);
 }
-/* =============Breakpoints================= */
+/* =============Faq================= */
 
 .faq {
-  padding-bottom: 81px;
+  padding-bottom: 130px;
 }
 
 .faq__title {
@@ -1066,6 +1068,16 @@
     top: -29%;
     right: -69%;
   }
+
+  /* =============Faq================= */
+
+  .accordion__list-title {
+    font-size: 24px;
+  }
+
+  .accordion__list-content p {
+    font-size: 23px;
+  }
 }
 
 @media (max-width: 800px) {
@@ -1115,9 +1127,25 @@
     gap: 15px;
   }
 
+  /* =============Examples================= */
+  .examples__inner {
+    padding-bottom: 100px;
+  }
+
+  /* =============Solutions================= */
+  .solutions__inner {
+    padding-bottom: 100px;
+  }
+
+  /* =============Features================= */
+
+  .features__inner {
+    padding-bottom: 100px;
+  }
+
   /* =============Assistents================= */
 
-  .assistents {
+  .assistents__inner {
     padding-bottom: 100px;
   }
 
@@ -1127,6 +1155,22 @@
 
   .assistents__grid-item-title {
     font-size: 20px;
+  }
+
+  /* =============Results================= */
+  .results__inner {
+    padding-bottom: 100px;
+  }
+
+  /* =============Faq================= */
+
+  .faq {
+    padding-bottom: 100px;
+  }
+
+  .accordion__list-title,
+  .accordion__list-content p {
+    max-width: 500px;
   }
 }
 
@@ -1245,6 +1289,21 @@
   .testimonials__next {
     display: none;
   }
+
+  /* =============Faq================= */
+
+  .accordion__list-title {
+    font-size: 22px;
+  }
+
+  .accordion__list-content p {
+    font-size: 20px;
+  }
+
+  .accordion__list-title,
+  .accordion__list-content p {
+    max-width: 400px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -1360,6 +1419,28 @@
     height: auto;
     object-fit: contain;
   }
+
+  /* =============Faq================= */
+
+  .faq__title {
+    text-align: center;
+  }
+
+  .accordion__list-control {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .accordion__list-title {
+    margin-bottom: 15px;
+    font-size: 20px;
+  }
+
+  .accordion__list-content p {
+    margin-top: 15px;
+    font-size: 18px;
+    text-align: center;
+  }
 }
 
 @media (max-width: 400px) {
@@ -1389,7 +1470,7 @@
     margin-bottom: 20px;
   }
 
-  /* =============advantages================= */
+  /* =============Advantages================= */
 
   .advantages__inner {
     padding: 50px 0 70px;
@@ -1434,9 +1515,25 @@
     margin-bottom: 40px;
   }
 
+  /* =============Examples================= */
+  .examples__inner {
+    padding-bottom: 70px;
+  }
+
+  /* =============Solutions================= */
+  .solutions__inner {
+    padding-bottom: 70px;
+  }
+
+  /* =============Features================= */
+
+  .features__inner {
+    padding-bottom: 70px;
+  }
+
   /* =============Assistents================= */
 
-  .assistents {
+  .assistents__inner {
     padding-bottom: 70px;
   }
 
@@ -1450,11 +1547,21 @@
 
   /* =============Results================= */
 
+  .results__inner {
+    padding-bottom: 70px;
+  }
+
   .results__body {
     padding: 20px;
   }
 
   .results__content-list p {
     font-size: 19px;
+  }
+
+  /* =============Faq================= */
+
+  .faq {
+    padding-bottom: 70px;
   }
 }
