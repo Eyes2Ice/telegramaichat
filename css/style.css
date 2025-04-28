@@ -255,19 +255,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 526px;
-
   text-align: center;
   line-height: 1.2;
   letter-spacing: 0.18px;
 }
 
-.examples__list-img {
-  width: 368px;
-  height: 241px;
+.examples__list-item-img {
+  max-width: 368px;
   margin-bottom: 30px;
+  overflow: hidden;
   border-radius: var(--border-radius);
-  background: #f1f4f9;
+}
+
+.examples__list-item-img img {
+  width: 100%;
+  object-fit: contain;
 }
 
 .examples__list-item-title {
@@ -1025,6 +1027,18 @@
     right: -35%;
   }
 
+  /* =============Examples================= */
+
+  .examples__list {
+    flex-wrap: wrap;
+  }
+
+  .examples__list-item p:last-of-type {
+    margin-bottom: 40px;
+  }
+
+  /* =============Solutions================= */
+
   .solutions__heading {
     gap: 45px;
   }
@@ -1602,6 +1616,12 @@
 
   .hero__btn {
     margin-bottom: 20px;
+  }
+
+  /* =============Examples================= */
+
+  .examples__title br {
+    display: none;
   }
 
   /* =============Advantages================= */
