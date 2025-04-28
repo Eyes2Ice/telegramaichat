@@ -26,8 +26,8 @@
     initialSlide: 0,
 
     navigation: {
-      nextEl: ".features__next",
-      prevEl: ".features__prev",
+      nextEl: ".next-button",
+      prevEl: ".prev-button",
     },
 
     pagination: {
