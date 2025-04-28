@@ -1,4 +1,4 @@
-/* .header__inner::before {
+.header__inner::before {
   content: "";
   position: absolute;
   top: -50%;
@@ -6,7 +6,8 @@
   display: inline-block;
   border-radius: 50%;
   filter: blur(130.1777801513672px);
-  width: 800px;
+  max-width: 800px;
+  width: 100%;
   aspect-ratio: 1;
   z-index: -1;
   background: radial-gradient(
@@ -14,7 +15,7 @@
     rgba(210, 201, 249, 1) 26.1%,
     rgba(255, 255, 255, 1) 100%
   );
-} */
+}
 
 .header__inner {
   display: flex;

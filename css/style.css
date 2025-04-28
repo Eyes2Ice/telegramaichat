@@ -6,15 +6,23 @@
 
 /* ============Hero section============== */
 
-.hero::before {
+.hero__inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero__inner::after {
   content: "";
   position: absolute;
-  top: -50%;
-  left: -20%;
+  right: -50%;
+  bottom: -50%;
   display: inline-block;
   border-radius: 50%;
   filter: blur(130.1777801513672px);
-  width: 800px;
+  max-width: 800px;
+  width: 100%;
   aspect-ratio: 1;
   z-index: -1;
   background: radial-gradient(
@@ -22,13 +30,6 @@
     rgba(210, 201, 249, 1) 26.1%,
     rgba(255, 255, 255, 1) 100%
   );
-}
-
-.hero__inner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  z-index: 1;
 }
 
 .hero__title {
@@ -911,9 +912,29 @@
 /* =============Blog================= */
 
 .blog__inner {
+  position: relative;
   display: flex;
   flex-direction: column;
   padding-bottom: 120px;
+}
+
+.blog__inner::after {
+  content: "";
+  position: absolute;
+  right: -35%;
+  bottom: -45%;
+  display: inline-block;
+  border-radius: 50%;
+  filter: blur(130.1777801513672px);
+  max-width: 800px;
+  width: 100%;
+  aspect-ratio: 1;
+  z-index: -1;
+  background: radial-gradient(
+    ellipse farthest-corner at 50% 50%,
+    rgba(210, 201, 249, 1) 26.1%,
+    rgba(255, 255, 255, 1) 100%
+  );
 }
 
 .blog__heading {
@@ -1121,6 +1142,10 @@
   }
 
   /* =============Blog================= */
+
+  .blog__inner::after {
+    bottom: 25%;
+  }
 
   .blog__list {
     flex-wrap: wrap;
@@ -1462,6 +1487,13 @@
 }
 
 @media (max-width: 600px) {
+  /* =============Header================= */
+
+  .header__inner::before {
+    top: -15%;
+    left: -15%;
+  }
+
   .assistents__grid {
     grid-template-columns: 1fr;
   }
@@ -1691,9 +1723,17 @@
 
 @media (max-width: 400px) {
   /* =============Header================= */
+  .header__inner::before {
+    display: none;
+  }
+
   .title {
     text-align: center;
     font-size: 30px;
+  }
+
+  .hero__inner::after {
+    display: none;
   }
 
   .hero__switch {
@@ -1820,7 +1860,7 @@
   /* =============Contact================= */
 
   .contact__inner {
-    padding-bottom: 70px;
+    padding-bottom: 40px;
   }
 
   .contact__inner .contact__subtitle p {
