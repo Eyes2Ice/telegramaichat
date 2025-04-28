@@ -6,12 +6,21 @@
 
 /* ============Hero section============== */
 
-.hero {
-  background: linear-gradient(
-    335deg,
-    rgb(212 203 249) 10%,
-    rgb(255 255 255 / 0%) 30%,
-    rgb(255 255 255 / 0%) 81%
+.hero::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -20%;
+  display: inline-block;
+  border-radius: 50%;
+  filter: blur(130.1777801513672px);
+  width: 800px;
+  aspect-ratio: 1;
+  z-index: -1;
+  background: radial-gradient(
+    ellipse farthest-corner at 50% 50%,
+    rgba(210, 201, 249, 1) 26.1%,
+    rgba(255, 255, 255, 1) 100%
   );
 }
 
@@ -81,15 +90,6 @@
 }
 
 /* =============Advantages ================= */
-
-.advantages {
-  background: linear-gradient(
-    208deg,
-    rgb(212 203 249) 10%,
-    rgb(255 255 255 / 0%) 30%,
-    rgb(255 255 255 / 0%) 81%
-  );
-}
 
 .advantages__inner {
   display: flex;
