@@ -1587,7 +1587,7 @@
 
   .features__slide-buttons-left,
   .features__slide-buttons-right {
-    padding: 5px;
+    padding: 10px;
   }
 
   /* =============Results================= */
@@ -1710,7 +1710,7 @@
 
   .features__slide-buttons {
     flex-direction: column;
-    padding: 10px 5px;
+    gap: 25px;
   }
 
   .features__slide-offer-numbers {
